@@ -1,0 +1,352 @@
+/* 引入字体图标 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/fonts1/iconfont.ttf?t=1627194264464') format('truetype');
+}
+
+/* 定义使用 iconfont 的样式 */
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 6px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sl {
+    float: left;
+}
+
+/* 浮动不具有继承性 */
+.sr {
+    float: right;
+}
+
+/* 宽度不进行设置，默认为浏览器宽度 */
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    /*垂直居中 */
+    background-color: #f1f1f1;
+}
+
+/* 用于字体颜色为红色的类 */
+.style_red {
+    color: #c81623
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+/* 小竖线 */
+.shortcut .sr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+/* header头部制作 */
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: pink;   辅助功能的背景色*/
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+    /* background-color: skyblue; */
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 61px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 455px;
+    height: 36px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 83px;
+    height: 36px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.shopcar {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    /* 使文字在竖直上居中 */
+    text-align: center;
+    /* 使文字在水平上居中 */
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar .gouwuche {
+    position: absolute;
+    left: 23px;
+    color: red;
+    font-size: 15px;
+}
+
+.shopcar .youjiantou {
+    position: absolute;
+    right: 15px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    left: 105px;
+    /* 打印文字时，文字段向右移动 */
+    /* height: 14px; */
+    /* 打印文字时，问字段向左移动 */
+    line-height: 14px;
+    /* 修改文字的位置 */
+    color: #fff;
+    background-color: #e60012;
+    padding: 0px 5px;
+    /* 把盒子撑大 */
+    border-radius: 7px 7px 7px 0;
+    /* 一个边为直角，剩下为圆弧 */
+}
+
+.nav {
+    height: 46px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 46px;
+    background-color: #b1191a;
+}
+
+.nav .navitems {
+    float: left;
+    height: 46px;
+    width: 990px;
+    /* background-color: pink; */
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    /* 长宽与父盒子相同 */
+    border-bottom: 2px solid #b1191a;
+    /* 与大盒子相同，加上下划线，否则dd盒子无法与右侧下划线对齐（会差2px） */
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    /* border-bottom: 1px solid #c81623;
+    美化最后一个li */
+}
+
+.dropdown .dd ul li {
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+    /* 仅仅是美化作用，由于没有指定宽度，因此不用使用CSS3盒子 */
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li span {
+    float: right;
+    margin-right: 2px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.dropdown .dd ul li:hover span {
+    color: #c81623;
+}
+
+.navitems ul li a {
+    display: block;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 25px;
+    font-size: 16px;
+}
+
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    box-sizing: border-box;
+    /* 由于li里面有padding，为了方便计算，用CSS3盒子（width就是宽度，不计padding和border）*/
+    float: left;
+    width: 240px;
+    /* 1200除以5 */
+    height: 50px;
+    padding-left: 35px;
+    /* 把内容挤开 */
+}
+
+.mod_service ul li .pic {
+    display: block;
+    float: left;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/精灵图.png);
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+.mod_service ul li .one {
+    background-position: -253px -3px;
+}
+
+.mod_service ul li .two {
+    background-position: -253px -54px;
+}
+
+.mod_service ul li .three {
+    background-position: -256px -105px;
+}
+
+.mod_service ul li .four {
+    background-position: -258px -156px;
+}
+
+.mod_service ul li .five {
+    background-position: -257px -209px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_copyright .links {
+    /* text-align: center; */
+    height: 40px;
+    margin-top: 23px;
+}
+
+.mod_copyright .links li:nth-child(even) {
+    width: 1px;
+    background-color: #666;
+    height: 16px;
+    margin-top: 1px;
+}
+
+.mod_copyright .links li {
+    /* display: inline-block; */
+    float: left;
+}
+
+.mod_copyright .links a {
+    margin: 0 10px;
+}
+
+.mod_copyright .links .tiaozheng {
+    margin-left: 195px;
+}
+
+.mod_copyright .copyright {
+    text-align: center;
+}
